@@ -1,0 +1,27 @@
+ body { font-family: 'Segoe UI', sans-serif; }
+    .hero {
+      background: url('https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?cs=srgb&dl=pexels-mnzoutfits-1598505.jpg&fm=jpg') center/cover no-repeat;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .category-card img {
+      border-radius: 12px;
+    }
+    .product-card:hover {
+      transform: scale(1.03);
+      transition: 0.3s;
+    }
+    footer {
+      background: #343a40;
+      color: white;
+      padding: 40px 0;
+    }
+    .social-icons a {
+      color: white;
+      margin-right: 15px;
+      font-size: 20px;
+    }

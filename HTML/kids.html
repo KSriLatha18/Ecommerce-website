@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kids Wear Collection</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../CSS/kids.css">
+</head>
+
+<body>
+
+  <nav class="navbar bg-white text-dark" >
+    <div class="container justify-content-center">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold" href="Homepage.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold" href="About.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold" href="Contactus.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <h1>✨ Little Style Stars ✨</h1>
+    <p>Trendy & Comfortable Kids Fashion</p>
+  </header>
+
+  
+
+  <nav>
+    <ul>
+      <li><a href="#" onclick="filterItems('all')">All</a></li>
+      <li><a href="#" onclick="filterItems('boys')">Boys</a></li>
+      <li><a href="#" onclick="filterItems('girls')">Girls</a></li>
+    </ul>
+  </nav>
+
+  <section class="banner">
+    <h2> Summer Collection 2025!</h2>
+    <p>Cool Looks for Hot Days </p>
+  </section>
+
+  <section class="products">
+    <h2>Our Top Picks</h2>
+
+    <div class="product-card girls">
+      <img src="../images/kids/k1" alt="Kids Frock" height="200px">
+      <h3>Floral Frock</h3>
+      <p>₹799</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card boys">
+      <img src="../images/kids/k2" alt="Boys Shirt" height="200px">
+      <h3>Cool Shirt</h3>
+      <p>₹699</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card girls boys">
+      <img src="../images/kids/k3" alt="Denim Jeans" height="200px">
+      <h3>Denim Jeans</h3>
+      <p>₹899</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card boys">
+      <img src="../images/kids/k4" alt="Cartoon T-shirt" height="200px">
+      <h3>Cartoon T-Shirt</h3>
+      <p>₹499</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="product-card girls">
+      <img src="../images/kids/k5" alt="Party Dress" height="200px">
+      <h3>Party Dress</h3>
+      <p>₹999</p>
+      <button>Buy Now</button>
+    </div>
+
+  </section>
+
+  <footer class="  pt-5 pb-4" style="background-color: #ecc8af; color: black;">
+  <div class="container text-md-left">
+    <div class="row text-md-left">
+
+      <!-- About -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-dark">ShopZone</h5>
+        <p>Your one-stop shop for the latest fashion, electronics, and more. Trusted by thousands of happy customers.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold " style="color: black;">Quick Links</h5>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">Home</a></p>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">Shop</a></p>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">About</a></p>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">Contact</a></p>
+      </div>
+
+      <!-- Customer Service -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Customer Service</h5>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">FAQs</a></p>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">Returns</a></p>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">Shipping</a></p>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">Privacy Policy</a></p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Newsletter</h5>
+        <p>Subscribe to get the latest updates and offers.</p>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your email" aria-label="Your email">
+            <button class="btn btn-warning" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Social media -->
+    <hr class="mb-4 mt-4">
+    <div class="row align-items-center text-center text-md-start">
+
+      <div class="col-md-6 col-lg-7">
+        <p>© 2025 ShopZone. All Rights Reserved.</p>
+      </div>
+
+      <div class="col-md-6 col-lg-5 text-md-end">
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+  <script>
+    function filterItems(category) {
+      const items = document.querySelectorAll('.product-card');
+      items.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+          item.style.display = 'inline-block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

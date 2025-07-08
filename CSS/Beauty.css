@@ -1,0 +1,24 @@
+ body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      background-image: url('https://img.freepik.com/premium-photo/set-various-products-makeup-light-surface_23-2148181428.jpg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: black;
+      padding: 170px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+    }
+    .category-card img {
+      height: 220px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 25px 0;
+      text-align: center;
+    }

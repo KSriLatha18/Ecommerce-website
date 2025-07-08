@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multi Navbar Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../CSS/Homepage.css">
+<style>
+    .goldenrod-bg {
+      background-color: goldenrod;
+    }
+     .carousel-caption-fix {
+    z-index: 2;
+    position: relative;
+  }
+  
+  /* Change carousel arrow color to gray */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(4%) saturate(535%) hue-rotate(168deg) brightness(92%) contrast(90%);
+  }
+
+    
+  </style>
+</head>
+<body>
+
+  <!-- First Navbar -->
+  <nav class="navbar px-4" style="background-color: #ce796b;">
+    <div class="container-fluid d-flex justify-content-between align-items-center text-white">
+      
+      <!-- Left: Social Icons -->
+      <div>
+        <i class="fab fa-facebook me-3"></i>
+        <i class="fab fa-instagram me-3"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+
+      <!-- Right: My Account, Login, Signup -->
+       <!-- Navbar: update the right-side buttons -->
+<div id="user-section">
+  <a href="login.html"><button class="btn btn-outline-light btn-sm me-2">Login</button></a>
+  <a href="signup.html"><button class="btn btn-light btn-sm">Signup</button></a>
+</div>
+
+      <!-- <div>
+        <a href="#" class="text-white text-decoration-none fw-semibold me-3">My Account</a>
+        <button class="btn btn-outline-light btn-sm me-2">Login</button>
+        <button class="btn btn-light btn-sm">Signup</button>
+      </div> -->
+    </div>
+  </nav>
+
+  <!-- Second Navbar -->
+  <nav class="navbar px-4 fixed" style="background-color: #e7ad99;">
+    <div class="container-fluid d-flex justify-content-between align-items-center text-white">
+      <div>Contact: +91 9876543210</div>
+      <div class="w-50">
+        <input type="text" class="form-control" placeholder="Search...">
+      </div>
+      <div>
+        <a href="cart.html"><i class="fas fa-shopping-cart me-3"></i></a>
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Third Navbar -->
+  <nav class="navbar bg-white text-dark" >
+    <div class="container justify-content-center">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold" href="Homepage.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold" href="About.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold" href="Contactus.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+
+
+<div id="fashionCarousel" class="carousel slide " data-bs-ride="carousel" style="margin-top: 0px; padding-top: 0px;">
+  <div class="carousel-inner">
+
+    <!-- Menswear -->
+    <div class="carousel-item active" style="background-color: #ecc8af;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start ps-md-5 carousel-caption-fix">
+            <h2 class="fw-bold">Explore Menswear</h2>
+            <p>Stylish and comfortable clothing for men.</p>
+            <a href="men.html" class="btn btn-dark">Shop Now</a>
+          </div>
+          <div class="col-md-6">
+            <img src="../pics/men 1stpage.png" class="d-block w-100" style="height: 500px; object-fit: fill;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Womenswear -->
+
+    <div class="carousel-item" style="background-color: #ecc8af;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start ps-md-5 carousel-caption-fix">
+            <h2 class="fw-bold">Discover Womenswear</h2>
+            <p>Elegant and trendy outfits for women.</p>
+            <a href="women.html" class="btn btn-dark">Shop Now</a>
+          </div>
+          <div class="w-50 h-100">
+            <img src="../pics/women1stpage.png" class="d-block w-100" alt="Womenswear" height="500px" style="object-fit: fill;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kidswear -->
+    <div class="carousel-item" style="background-color: #ecc8af;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-center text-md-start ps-md-5 carousel-caption-fix">
+            <h2 class="fw-bold">Adorable Kidswear</h2>
+            <p>Fun and comfy clothes for your little ones.</p>
+            <a href="kids.html" class="btn btn-dark">Shop Now</a>
+          </div>
+          <div class="col-md-6">
+            <img src="../pics/kids 1stpage.png" class="d-block w-100" alt="Kidswear" height="500px" style="object-fit: contain;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Controls with gray arrows -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#fashionCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#fashionCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<br><br><br>
+<!--  -->
+<div class="carousel-container">
+<div class="carousel-track" id="carouselTrack">
+<a href="men.html" style="text-decoration: none;"><div class="category"><img src="../images/homepage/men1.jpg" alt="men"><span>Men</span></div></a>
+<a href="women.html" style="text-decoration: none;"><div class="category"><img src="../images/homepage/women1.jpg" alt="women"><span>women</span></div></a>
+<a href="kids.html" style="text-decoration: none;"><div class="category"><img src="../images/homepage/kid1.jpg" alt="kids"><span>kids</span></div></a>
+<a href="shoes.html" style="text-decoration: none;"><div class="category"><img src="../images/homepage/shoes1" alt="Shoes"><span>Shoes</span></div></a>
+<a href="jwellary.html" style="text-decoration: none;"><div class="category"><img src="../images/homepage/jwellary.jpg" alt="Jewelery"><span>Jewellery</span></div></a>
+<a href="beauty.html" style="text-decoration: none;"><div class="category"><img src="../images/homepage/cosmatic1" alt="Beauty"><span>Beauty</span></div></a>
+<div class="category"><img src="../images/homepage/furniture1" alt="Decor"><span>Furniture</span></div>
+<div class="category"><img src="../images/homepage/decor1.jpg" alt="Home"><span>Home</span></div>
+<div class="category"><img src="../images/homepage/electronics1" alt="Home"><span>Electronics</span></div>
+<div class="category"><img src="../images/homepage/kitchen1.jpg" alt="Home"><span>Kitchen</span></div>
+  </div>
+   <button class="carousel-btn left" onclick="moveCarousel(-1)">&#10094;</button>
+
+  <button class="carousel-btn right" onclick="moveCarousel(1)">&#10095;</button> 
+  </div>
+ 
+ </section>
+
+<!-- <div id="abc">&#8593</div> -->
+<!--  -->
+<br><br><br>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Buy 1 Get 1 Free</h5>
+      <p>Applicable on select fashion products. Hurry up while stock lasts!</p>
+      <button>Explore</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">50% off Electronics</h5>
+        <p class="card-text">Grab amazing discounts on gadgets and accessories. Limited time offer!</p>
+      <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Refer & Earn – Get ₹500</h5>
+      <p>Invite friends and earn ₹500 for each successful referral.</p>
+      <button>Refer Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Summer Sale – Flat 40% Off</h5>
+      <p>Enjoy unbeatable prices on all summer essentials. Offer valid till June 30.</p>
+      <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+   <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection</p>
+        <div class="pro-container">
+            <div class="pro">
+    <img src="../images/menwear/m1.jpg" alt="">
+    <div class="des">
+        <span>Adiddas</span>
+        <h5>Cotton shirts pure cotton</h5>
+        <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <h4>₹600</h4>
+    </div>
+    <a href="#" class="add-to-cart"
+       data-title="Cotton shirts pure cotton"
+       data-price="600"
+       data-description="Adiddas">
+       <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+    </a>
+</div>
+            <div class="pro">
+                <img src="../images/menwear/m2.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5> Cotton shirt </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹800</h4>
+                </div>
+                <a href="#" class="add-to-cart"
+       data-title=" Cotton shirt"
+       data-price="800"
+       data-description="Adiddas">
+       <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+    </a>
+            </div>
+            <div class="pro">
+                <img src="../images/menwear/m3.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Cotton shirts </h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹500</h4>
+                </div>
+                <a href="#" class="add-to-cart" data-title=" Cotton shirts"
+                  data-price="500"
+                  data-description="Adiddas">
+       <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+    </a>
+            </div>
+            <div class="pro">
+                <img src="../images/menwear/m4.jpg" alt="">
+                <div class="des">
+                    <span>Adiddas</span>
+                    <h5>Pure Cotton shirts cotton</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹1200</h4>
+                </div>
+                <a href="#" class="add-to-cart" data-title="Pure Cotton shirts"
+                  data-price="1200"
+                  data-description="Adiddas"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+             <div class="pro-container">
+            <div class="pro">
+                <img src="../images/women/w1.jpg" alt="">
+                <div class="des">
+                    <span>CODE BY LIFESTYLE</span>
+                    <h5>Women Midi Dress</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹1200</h4>
+                </div>
+                <a href="#" class="add-to-cart" data-title="Women Midi Dress"
+                  data-price="1200"
+                  data-description="CODE BY LIFESTYLE">
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="pro">
+                <img src="../images/women/w2.jpg" alt="">
+                <div class="des">
+                    <span>STYLUM</span>
+                    <h5>Women Floral Print Empire Dress</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹900</h4>
+                </div>
+                <a href="#" class="add-to-cart" data-title="Women Floral Print Empire Dress"
+                  data-price="900"
+                  data-description="STYLUM">
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="pro">
+                <img src="../images/women/w3.jpg" alt="">
+                <div class="des">
+                    <span>AZIRA</span>
+                    <h5>Smocked Gown Dress</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹599</h4>
+                </div>
+                <a href="#" class="add-to-cart" data-title="Smocked Gown Dress"
+                  data-price="599"
+                  data-description="AZIRA">
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="pro">
+                <img src="../images/women/w4.jpg" alt="">
+                <div class="des">
+                     <span>CODE BY LIFESTYLE</span>
+                    <h5>Women Midi Dress</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>₹550</h4>
+                </div>
+                <a href="#" class="add-to-cart" data-title="Women Midi Dress"
+                  data-price="550"
+                  data-description="CODE BY LIFESTYLE">
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+            </div>
+            
+    </section>
+
+
+    <footer class="  pt-5 pb-4" style="background-color: #ecc8af; color: black;">
+  <div class="container text-md-left">
+    <div class="row text-md-left">
+
+      <!-- About -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-dark">ShopZone</h5>
+        <p>Your one-stop shop for the latest fashion, electronics, and more. Trusted by thousands of happy customers.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold " style="color: black;">Quick Links</h5>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">Home</a></p>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">Shop</a></p>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">About</a></p>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">Contact</a></p>
+      </div>
+
+      <!-- Customer Service -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Customer Service</h5>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">FAQs</a></p>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">Returns</a></p>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">Shipping</a></p>
+        <p><a href="#" class="text-dark" style="text-decoration: none;">Privacy Policy</a></p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Newsletter</h5>
+        <p>Subscribe to get the latest updates and offers.</p>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your email" aria-label="Your email">
+            <button class="btn btn-warning" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Social media -->
+    <hr class="mb-4 mt-4">
+    <div class="row align-items-center text-center text-md-start">
+
+      <div class="col-md-6 col-lg-7">
+        <p>© 2025 ShopZone. All Rights Reserved.</p>
+      </div>
+
+      <div class="col-md-6 col-lg-5 text-md-end">
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="../JS/Homepage.js"></script>
+<script>
+  // Get logged-in user's name
+  const loggedInUser = localStorage.getItem("loggedInUser");
+
+  // If user is logged in, replace buttons with greeting
+  if (loggedInUser) {
+    const userSection = document.getElementById("user-section");
+    userSection.innerHTML = `
+      <span class="fw-semibold text-white">Welcome, ${loggedInUser}</span>
+      <button class="btn btn-outline-light btn-sm ms-3" onclick="logout()">Logout</button>
+    `;
+  }
+
+  function logout() {
+    localStorage.removeItem("loggedInUser");
+    location.reload();
+  }
+</script>
+
+
+
+</body>
+</html>

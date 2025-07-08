@@ -1,0 +1,118 @@
+:root {
+      --primary: #ce796b;
+      --secondary: #e7ad99;
+      --accent: #ecc8af;
+      --light: #fffaf9;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light);
+      color: #333;
+    }
+
+    header {
+      background-image: linear-gradient(rgba(206, 121, 107, 0.85), rgba(206, 121, 107, 0.85)),
+        url('https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2022-02/parcel-paper-cartons-with-shopping-cart-logo-trolley-laptop-keyboard.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .contact-section {
+      max-width: 900px;
+      margin: -50px auto 50px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+      padding: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .contact-form, .contact-info {
+      flex: 1 1 350px;
+    }
+
+    .contact-form h2, .contact-info h2 {
+      color: var(--primary);
+      margin-top: 0;
+      font-size: 26px;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    button {
+      background-color: var(--primary);
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #b85d4d;
+    }
+
+    .contact-info p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .contact-info span {
+      display: inline-block;
+      font-weight: 600;
+      color: #444;
+      width: 90px;
+    }
+
+    footer {
+      background-color: var(--accent);
+      text-align: center;
+      padding: 20px;
+      color: #333;
+      font-weight: 500;
+      border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        padding: 30px 20px;
+      }
+    }

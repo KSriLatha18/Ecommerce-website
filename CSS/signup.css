@@ -1,0 +1,129 @@
+
+.error{
+    color: red;
+}
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f8e1f4, #e0c3fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+#sign-up-container {
+  background-color: #fff;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+#sign-up-container h1 {
+  color: #5c2483;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #b366ff;
+  outline: none;
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+  margin-right: 6px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+label[for=""] {
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+/* Error Messages */
+.Error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Submit Button */
+#sub-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #7a42f4;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#sub-btn:hover {
+  background-color: #5f32c2;
+}
+
+/* Footer */
+#form-footer {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#form-footer a {
+  color: #7a42f4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#form-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #sign-up-container {
+    padding: 30px 20px;
+  }
+}
