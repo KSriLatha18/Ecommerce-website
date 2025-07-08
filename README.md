@@ -40,5 +40,20 @@
   <img src="screenshots/product2.png" width="45%" />
 </p>
 
+## 🙋‍♀️ Note from the Developer
 
+This project was built as part of my frontend development learning journey and showcases my skills in HTML, CSS, JavaScript, and Bootstrap.  
+I enjoyed designing a user-friendly shopping experience and plan to keep improving it.
+
+I'm open to feedback, collaborations, and opportunities in web development.  
+If you'd like to connect, feel free to reach out on [LinkedIn](https://www.linkedin.com/in/ksrilatha18) or check my [GitHub](https://github.com/KSriLatha18).
+
+---
+
+## 🙏 Thank You
+
+Thank you for visiting this repository!  
+If you found it useful or interesting, please give it a ⭐ star and share your thoughts.
+
+Happy Coding! 💻
 
