@@ -25,4 +25,20 @@
 - Font Awesome
 
 
+## 📸 Screenshots
+
+### 🏠 Homepage
+![Homepage](screenshots/homepage.png)
+
+### 🛒 Cart Page
+![Cart](screenshots/cart.png)
+
+### 🛍️ Product Page
+
+<p float="left">
+  <img src="screenshots/product1.png" width="45%" />
+  <img src="screenshots/product2.png" width="45%" />
+</p>
+
+
 
