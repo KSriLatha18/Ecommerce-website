@@ -50,7 +50,7 @@ form.addEventListener('submit',(e)=>{
 
         if(mailValue===user.email && passValue===user.password)
         {
-            alert("login successfull")
+            alert("login successful")
             localStorage.setItem("loggedInUser", user.username); 
             window.location.href="Homepage.html"
         }

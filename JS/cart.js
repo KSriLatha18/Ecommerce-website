@@ -22,7 +22,7 @@ function updateQuantity(index,value)
 
 function clearCart()
 {
-    if(confirm('Are you sure youwant to clear the cart?'))
+    if(confirm('Are you sure you want to clear the cart?'))
     {
         cart=[];
         saveCart();
@@ -57,7 +57,7 @@ function renderCart()
         Remove</button></div>`;
         container.appendChild(div);
     });
-    totalBox.innerHTML=`<strong>Total" Rs.${total}</strong>`;
+    totalBox.innerHTML=`<strong>Total: Rs.${total}</strong>`;
 }
 renderCart();
 
